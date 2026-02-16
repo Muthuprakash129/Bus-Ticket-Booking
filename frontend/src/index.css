@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Form inputs - consistent focus ring */
+input:focus, select:focus, button:focus-visible {
+  @apply outline-none;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 rounded-full;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full hover:bg-slate-400;
+}
